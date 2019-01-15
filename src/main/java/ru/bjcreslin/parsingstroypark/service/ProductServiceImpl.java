@@ -1,10 +1,11 @@
-package service;
+package ru.bjcreslin.parsingstroypark.service;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import ru.bjcreslin.parsingstroypark.model.Product;
 import ru.bjcreslin.parsingstroypark.repository.ProductRepository;
+import ru.bjcreslin.parsingstroypark.repository.ProductRepository1;
 
 import java.util.List;
 
@@ -15,7 +16,7 @@ import java.util.List;
 @Service
 public class ProductServiceImpl implements ProductService {
     @Autowired
-    ProductRepository productRepository;
+    ProductRepository1 productRepository;
 
     @Override
     public Product getById(Long id) {

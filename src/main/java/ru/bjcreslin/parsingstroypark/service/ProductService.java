@@ -1,4 +1,4 @@
-package service;
+package ru.bjcreslin.parsingstroypark.service;
 
 import ru.bjcreslin.parsingstroypark.model.Product;
 

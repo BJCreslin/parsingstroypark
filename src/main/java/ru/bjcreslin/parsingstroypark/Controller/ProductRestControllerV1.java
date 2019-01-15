@@ -6,7 +6,7 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import ru.bjcreslin.parsingstroypark.model.Product;
-import ru.bjcreslin.parsingstroypark.service.*;
+import ru.bjcreslin.parsingstroypark.service.ProductService;
 
 import javax.validation.Valid;
 
@@ -18,7 +18,8 @@ import javax.validation.Valid;
 @RequestMapping("/api/v1/")
 public class ProductRestControllerV1 {
     @Autowired
-    private service.ProductService productService;
+//    private service.ProductService productService;
+    private ProductService productService;
 
     @RequestMapping(value = "{id}", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     public ResponseEntity<Product> getProduct(@PathVariable("id") Long productId) {
