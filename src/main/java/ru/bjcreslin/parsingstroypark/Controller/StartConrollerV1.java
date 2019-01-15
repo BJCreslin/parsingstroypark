@@ -15,7 +15,7 @@ public class StartConrollerV1 {
 
 
     @RequestMapping(value = "",method = RequestMethod.GET,produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
-    public ResponseEntity<Product>getRun(){
-        
+    public ResponseEntity<String>getRun(){
+       return new ResponseEntity("Hello");
     }
 }
